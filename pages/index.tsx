@@ -96,7 +96,7 @@ export default function Home() {
         ) : (
           <></>
         )}
-        {/* {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>} */}
+        {<WhereIHaveWorked />}
         {context.sharedState.finishedLoading ? (
           <Footer githubUrl={""} hideSocialsInDesktop={true} />
         ) : (
