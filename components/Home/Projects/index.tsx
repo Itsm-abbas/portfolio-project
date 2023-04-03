@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ArrowIcon from "../../Icons/ArrowIcon";
 import Modal from "./Modal";
+import StackArea from "../StackArea";
 
 const Projects = () => {
   const [modalData, setmodalData] = useState({});
@@ -73,7 +74,7 @@ const Projects = () => {
       className="flex flex-col items-center justify-center py-20 space-y-8 bg-AAprimary"
     >
       <div
-        className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] 
+        className="flex flex-col space-y-8 px-4 md:px-0 w-full 
         md:w-[800px] lg:w-[1000px]"
       >
         <section className="flex items-center">
@@ -113,13 +114,13 @@ const Projects = () => {
                       </th>
                       <th
                         scope="col"
-                        className=" font-medium text-gray-900  py-4 text-left"
+                        className="px-4 font-medium text-gray-900  py-4 text-left"
                       >
                         Type
                       </th>
                       <th
                         scope="col"
-                        className=" font-medium text-gray-900  py-4 text-left"
+                        className="px-4 font-medium text-gray-900  py-4 text-left"
                       >
                         Field
                       </th>
@@ -138,10 +139,10 @@ const Projects = () => {
                           <td className="px-4 py-4 whitespace-nowrap  font-medium text-gray-900">
                             {item.title}
                           </td>
-                          <td className=" text-gray-900 font-semibold  py-4 whitespace-nowrap">
+                          <td className="px-4 text-gray-900 font-semibold  py-4 whitespace-nowrap">
                             {item.type}
                           </td>
-                          <td className=" text-gray-900 font-semibold  py-4 whitespace-nowrap">
+                          <td className="px-4 text-gray-900 font-semibold  py-4 whitespace-nowrap">
                             {item.field}
                           </td>
                         </tr>
@@ -153,6 +154,10 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        {/* Table end */}
+      </div>
+      <div className="py-10">
+        <StackArea />
       </div>
       {ismodalopen && (
         <Modal
