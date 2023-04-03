@@ -9,6 +9,7 @@ import AppContext from "../components/AppContextFolder/AppContext";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
+import Education from "../components/Home/Education";
 export default function Home() {
   const [ShowElement, setShowElement] = useState(false);
   const [ShowMe, setShowMe] = useState(false);
@@ -96,7 +97,8 @@ export default function Home() {
         ) : (
           <></>
         )}
-        {<WhereIHaveWorked />}
+        {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>}
+        {context.sharedState.finishedLoading ? <Education /> : <></>}
         {context.sharedState.finishedLoading ? (
           <Footer githubUrl={""} hideSocialsInDesktop={true} />
         ) : (
