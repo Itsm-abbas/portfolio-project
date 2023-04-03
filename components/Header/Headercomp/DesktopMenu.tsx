@@ -20,10 +20,18 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           delay: props.finishedLoading ? 0 : 1.3,
         }}
         className=" text-AAsecondary"
-       
       >
-        <ReactScrollLink to="aboutSection" spy={true} smooth={true} offset={-100} duration={200}>
-          &gt; 01. <span className="text-gray-500 hover:cursor-pointer hover:text-AAsecondary duration-300">About</span>
+        <ReactScrollLink
+          to="aboutSection"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          &gt; 01.{" "}
+          <span className="text-gray-500 hover:cursor-pointer hover:text-AAsecondary duration-300">
+            About
+          </span>
         </ReactScrollLink>
       </motion.div>
       <motion.div
@@ -41,11 +49,18 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           delay: props.finishedLoading ? 0 : 1.4,
         }}
         className="text-AAsecondary"
-       
       >
-        <ReactScrollLink to="WhereIhaveWorkedSection" spy={true} smooth={true} offset={-300} duration={200}>
+        <ReactScrollLink
+          to="WhereIhaveWorkedSection"
+          spy={true}
+          smooth={true}
+          offset={-300}
+          duration={200}
+        >
           &gt; 02.{" "}
-          <span className="text-gray-500  hover:cursor-pointer hover:text-AAsecondary duration-300">Work Experience</span>
+          <span className="text-gray-500  hover:cursor-pointer hover:text-AAsecondary duration-300">
+            Work Experience
+          </span>
         </ReactScrollLink>
       </motion.div>
       <motion.div
@@ -64,11 +79,18 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         }}
         className="text-AAsecondary"
       >
-        <ReactScrollLink to="SomethingIveBuiltSection" spy={true} smooth={true} offset={-100} duration={200}>
-        &gt; 03. <span className="text-gray-500  hover:cursor-pointer hover:text-AAsecondary duration-300">Projects</span>
-
+        <ReactScrollLink
+          to="ProjectSection"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          &gt; 03.{" "}
+          <span className="text-gray-500  hover:cursor-pointer hover:text-AAsecondary duration-300">
+            Projects
+          </span>
         </ReactScrollLink>
-        
       </motion.div>
       <motion.span
         initial={{
@@ -86,11 +108,19 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         }}
         className="text-AAsecondary"
       >
-         <ReactScrollLink to="GetInTouchSection" spy={true} smooth={true} offset={-100} duration={200}>
-         &gt; 04. <span className="text-gray-500  hover:cursor-pointer hover:text-AAsecondary duration-300">Gallery</span>
+        <ReactScrollLink
+          to="GetInTouchSection"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          &gt; 04.{" "}
+          <span className="text-gray-500  hover:cursor-pointer hover:text-AAsecondary duration-300">
+            Gallery
+          </span>
         </ReactScrollLink>
       </motion.span>
-      
     </div>
   );
 }

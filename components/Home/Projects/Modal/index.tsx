@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useEffect } from "react";
 import { ImCross } from "react-icons/im";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
@@ -14,7 +13,7 @@ const Modal = ({ modal, setModal, modalData }) => {
   //   }, [modal]);
   return (
     <div
-      className={`text-gray-800 fixed backdrop-blur-sm transition-all duration-200 top-0 h-screen w-screen left-0 bottom-0 right z-20  ${
+      className={`text-gray-800 fixed backdrop-blur-sm transition-all duration-200 top-0 h-screen w-screen left-0 bottom-0 right-0 z-20  ${
         modal ? "scale-1 " : "scale-0"
       }`}
     >

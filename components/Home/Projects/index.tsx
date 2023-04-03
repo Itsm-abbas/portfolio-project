@@ -8,9 +8,9 @@ const Projects = () => {
   let ProjectsData = [
     {
       id: 1,
-      title: "Portfolio",
-      type: "Website",
-      field: "Programming",
+      title: "IP Data Puller",
+      type: "Web App",
+      field: "CyberSecurity",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci aliquam itaque fuga illo, quibusdam voluptatibus",
       image: "/projects/hulu-clone.png",
     },
@@ -24,6 +24,30 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: "The Complete Guide to Blockchain",
+      type: "Book",
+      field: "Blockchain",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci aliquam itaque fuga illo, quibusdam voluptatibus",
+      image: "/projects/dreamStore.png",
+    },
+    {
+      id: 4,
+      title: "Giva",
+      type: "Mobile App",
+      field: "Donation",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci aliquam itaque fuga illo, quibusdam voluptatibus",
+      image: "/projects/jobs_app.png",
+    },
+    {
+      id: 5,
+      title: "IP Data Puller",
+      type: "Web App",
+      field: "CyberSecurity",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci aliquam itaque fuga illo, quibusdam voluptatibus",
+      image: "/projects/hulu-clone.png",
+    },
+    {
+      id: 6,
       title: "The Complete Guide to Blockchain",
       type: "Book",
       field: "Blockchain",
@@ -44,7 +68,8 @@ const Projects = () => {
 
   return (
     <div
-      //   data-aos="fade-up"
+      // data-aos="fade-up"
+      id="ProjectSection"
       className="flex flex-col items-center justify-center py-20 space-y-8 bg-AAprimary"
     >
       <div
