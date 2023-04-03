@@ -10,7 +10,10 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
 import Education from "../components/Home/Education";
+import Loading from "../components/Loading/Loading";
+import Projects from "../components/Home/Projects";
 export default function Home() {
+  const [loading, setLoading] = useState(true);
   const [ShowElement, setShowElement] = useState(false);
   const [ShowMe, setShowMe] = useState(false);
   // context Variable to clearInterval
@@ -54,14 +57,16 @@ export default function Home() {
       setShowMe(true);
       context.sharedState.finishedLoading = true;
       context.setSharedState(context.sharedState);
-    }, 1000);
+    }, 3100);
   }, [context, context.sharedState]);
 
   useEffect(() => {
     Aos.init({ duration: 2000, once: true });
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
   }, []);
 
-  console.log("Portfolio Rendered...");
   const meta = {
     title: "Douglas Tjokrosetio",
     description: `I've been working on Software development for 5 years straight. Get in touch with me to know more.`,
@@ -83,28 +88,35 @@ export default function Home() {
         <meta property="og:title" content={meta.title} />
         <link rel="icon" href={meta.image} />
       </Head>
-      <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
-        <Header
-          finishedLoading={context.sharedState.finishedLoading}
-          sectionsRef={homeRef}
-        />
-        <MyName finishedLoading={context.sharedState.finishedLoading} />
-        <SocialMediaArround
-          finishedLoading={context.sharedState.finishedLoading}
-        />
-        {context.sharedState.finishedLoading ? (
-          <AboutMe ref={aboutRef} />
+      <>
+        {loading ? (
+          <Loading />
         ) : (
-          <></>
+          <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
+            <Header
+              finishedLoading={context.sharedState.finishedLoading}
+              sectionsRef={homeRef}
+            />
+            <MyName finishedLoading={context.sharedState.finishedLoading} />
+            <SocialMediaArround
+              finishedLoading={context.sharedState.finishedLoading}
+            />
+            {context.sharedState.finishedLoading ? (
+              <AboutMe ref={aboutRef} />
+            ) : (
+              <></>
+            )}
+            {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>}
+            {context.sharedState.finishedLoading ? <Education /> : <></>}
+            {context.sharedState.finishedLoading ? <Projects /> : <></>}
+            {context.sharedState.finishedLoading ? (
+              <Footer githubUrl={""} hideSocialsInDesktop={true} />
+            ) : (
+              <></>
+            )}
+          </div>
         )}
-        {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>}
-        {context.sharedState.finishedLoading ? <Education /> : <></>}
-        {context.sharedState.finishedLoading ? (
-          <Footer githubUrl={""} hideSocialsInDesktop={true} />
-        ) : (
-          <></>
-        )}
-      </div>
+      </>
     </>
   );
 }

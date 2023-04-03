@@ -75,7 +75,6 @@ export default function WhereIHaveWorked() {
       {/* // Internships Section */}
       <section className="flex flex-row items-center">
         <div className="flex flex-row items-center"></div>
-
         <span className="text-gray-800 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
           Internships
         </span>
@@ -188,6 +187,7 @@ const CompaniesBar = (props) => {
     </div>
   );
 };
+// For intership
 const CompaniesBarInternship = (props) => {
   const [barPosition, setBarPosition] = React.useState<Number>(-8); // Green bar position by the default it's -20px
   const [barAbovePosition, setBarAbovePosition] = React.useState<Number>(0);

@@ -5,6 +5,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      xs: "380px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     rotate: {
       "-180": "-180deg",
       "-90": "-90deg",
@@ -20,13 +28,13 @@ module.exports = {
       fontFamily: {
         Header: ["Lato", "sans-serif"],
         Text2: ["Lato", "sans-serif"],
-        About :["Playfair Display", "serif"],
+        About: ["Playfair Display", "serif"],
         Arimo: ["Arimo", "sans-serif"],
       },
       colors: {
         AAprimary: "#efe7dd",
         AAsecondary: "#4c79e5",
-        AAError:"#ff6489",
+        AAError: "#ff6489",
         AAtertiary: "#112340",
         ResumeButtonHover: "#f3ede6",
         MobileNavBarColor: "#112340",
@@ -34,7 +42,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwind-scrollbar"),require('tailwind-scrollbar-hide')], 
+  plugins: [require("tailwind-scrollbar"), require("tailwind-scrollbar-hide")],
   variants: {
     scrollbar: ["rounded"],
   },
