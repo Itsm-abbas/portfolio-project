@@ -1,0 +1,35 @@
+# Compiled Object files, Static and Shared libraries (binaries)
+*.o
+*.a
+*.so
+
+# Folders
+/bin/
+/build/
+/node_modules/
+/.vscode/
+/.idea/
+/.sass-cache/
+/dist/
+/out/
+/lib/
+/venv/
+/logs/
+/build/
+/coverage/
+/tmp/
+/.cache/
+/.pytest_cache/
+/.next/
+# OS or Editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Application-specific files
+
+.env
+.env.*
+*.env
+*.env.*
+*.log
