@@ -48,7 +48,7 @@ const StackArea = () => {
     },
   ];
   return (
-    <div className="px-4">
+    <div className="px-6">
       <p className="text-lg sm:text-xl font-semibold text-gray-800">
         Languages, libraries, frameworks, and tools I’ve been working with
         recently
@@ -56,7 +56,7 @@ const StackArea = () => {
       <div className="grid grid-cols-4 xs:grid-cols-4 sm:grid-cols-6 md:grid-cols-7 mt-10 gap-6">
         {Logos.map((item) => {
           return (
-            <div className="w-16 xs:w-20 p-4 bg-white rounded-full flex items-center justify-center">
+            <div className="w-16 xs:w-20 p-3 sm:p-4 bg-white rounded-full flex items-center justify-center">
               <img
                 className=" rounded-full"
                 src={item.image}
