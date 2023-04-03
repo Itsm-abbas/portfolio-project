@@ -69,7 +69,7 @@ const Projects = () => {
 
   return (
     <div
-      // data-aos="fade-up"
+      data-aos="fade-up"
       id="ProjectSection"
       className="flex flex-col items-center justify-center py-20 space-y-8 bg-AAprimary"
     >
@@ -102,25 +102,25 @@ const Projects = () => {
                     <tr>
                       <th
                         scope="col"
-                        className="px-4 font-medium text-gray-900  py-4 text-left"
+                        className="px-4 font-semibold text-gray-900  py-4 text-left"
                       >
                         No
                       </th>
                       <th
                         scope="col"
-                        className="px-4 font-medium text-gray-900  py-4 text-left"
+                        className="px-4 font-semibold text-gray-900  py-4 text-left"
                       >
                         Title
                       </th>
                       <th
                         scope="col"
-                        className="px-4 font-medium text-gray-900  py-4 text-left"
+                        className="px-4 font-semibold text-gray-900  py-4 text-left"
                       >
                         Type
                       </th>
                       <th
                         scope="col"
-                        className="px-4 font-medium text-gray-900  py-4 text-left"
+                        className="px-4 font-semibold text-gray-900  py-4 text-left"
                       >
                         Field
                       </th>
@@ -139,10 +139,10 @@ const Projects = () => {
                           <td className="px-4 py-4 whitespace-nowrap  font-medium text-gray-900">
                             {item.title}
                           </td>
-                          <td className="px-4 text-gray-900 font-semibold  py-4 whitespace-nowrap">
+                          <td className="px-4 text-gray-900 font-medium  py-4 whitespace-nowrap">
                             {item.type}
                           </td>
-                          <td className="px-4 text-gray-900 font-semibold  py-4 whitespace-nowrap">
+                          <td className="px-4 text-gray-900 font-medium  py-4 whitespace-nowrap">
                             {item.field}
                           </td>
                         </tr>
