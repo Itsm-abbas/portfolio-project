@@ -49,12 +49,12 @@ const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
       context.sharedState.portfolio.NavBar.scrolling = true;
       scrollSizeY.current = 0;
       //Hide when scroll down & show when scroll up
-      if (typeof window !== "undefined") {
-        window.addEventListener(
-          "scroll",
-          context.sharedState.portfolio.NavBar.IntervalEvent
-        );
-      }
+      // if (typeof window !== "undefined") {
+      //   window.addEventListener(
+      //     "scroll",
+      //     context.sharedState.portfolio.NavBar.IntervalEvent
+      //   );
+      // }
     }
   }, [
     context.sharedState.portfolio.NavBar,
