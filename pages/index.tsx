@@ -11,13 +11,11 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
 import Education from "../components/Home/Education";
-import Loading from "../components/Loader/Loader";
 import Projects from "../components/Home/Projects";
 import Gallery from "../components/Home/Gallery";
-import { Switch } from "@nextui-org/react";
-import { FaSun, FaRegMoon } from "react-icons/fa";
+import { FaMoon } from "react-icons/fa";
+import { ImSun } from "react-icons/im";
 export default function Home() {
-  const [loading, setLoading] = useState(true);
   const [ShowElement, setShowElement] = useState(false);
   const [ShowMe, setShowMe] = useState(false);
   // context Variable to clearInterval
@@ -66,13 +64,6 @@ export default function Home() {
 
   useEffect(() => {
     Aos.init({ duration: 2000, once: true });
-    if (isMobile) {
-      isMobile && setLoading(false);
-      return;
-    }
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
   }, []);
   // For dark mode
   const [theme, setTheme] = useState("");
@@ -127,59 +118,60 @@ export default function Home() {
         <link rel="icon" href={meta.image} />
       </Head>
 
-      {loading ? (
-        <Loading />
-      ) : (
+      <div
+        className={`relative snap-mandatory bg-AAprimary dark:bg-DarkbgColor min-h-screen  w-full `}
+      >
         <div
-          className={`relative snap-mandatory bg-AAprimary dark:bg-DarkbgColor min-h-screen  w-full `}
+          className={`absolute right-6 md:right-12 transition-all duration-500   ${
+            theme == "dark"
+              ? "top-20 sm:top-24  opacity-1"
+              : "-top-24 opacity-0"
+          }`}
         >
-          <div className="absolute top-20 right-6 md:top-24 md:right-12">
-            {isMobile ? (
-              <Switch
-                squared
-                size={"lg"}
-                bordered
-                color="primary"
-                checked={theme === "dark"}
-                icon={theme == "light" ? <FaRegMoon /> : <FaSun />}
-                onChange={handleThemeSwitch}
-              />
-            ) : (
-              <Switch
-                squared
-                size={"xl"}
-                bordered
-                color="primary"
-                checked={theme === "dark"}
-                icon={theme == "light" ? <FaRegMoon /> : <FaSun />}
-                onChange={handleThemeSwitch}
-              />
-            )}
-          </div>
-          <Header
-            finishedLoading={context.sharedState.finishedLoading}
-            sectionsRef={homeRef}
-          />
-          <MyName finishedLoading={context.sharedState.finishedLoading} />
-          <SocialMediaArround
-            finishedLoading={context.sharedState.finishedLoading}
-          />
-          {context.sharedState.finishedLoading ? (
-            <AboutMe ref={aboutRef} />
-          ) : (
-            <></>
-          )}
-          {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>}
-          {context.sharedState.finishedLoading ? <Education /> : <></>}
-          {context.sharedState.finishedLoading ? <Projects /> : <></>}
-          {context.sharedState.finishedLoading ? <Gallery /> : <></>}
-          {context.sharedState.finishedLoading ? (
-            <Footer githubUrl={""} hideSocialsInDesktop={true} />
-          ) : (
-            <></>
-          )}
+          <button
+            onClick={() => handleThemeSwitch()}
+            className="text-lg sm:text-xl outline-none rounded-md inline-flex appearance-none items-center justify-center p-3 sm:p-4 bg-orange-300 hover:bg-orange-400 transition-all duration-200 text-gray-800"
+          >
+            <ImSun />
+          </button>
         </div>
-      )}
+        <div
+          className={`absolute  right-6  md:right-12 transition-all duration-500   ${
+            theme == "light"
+              ? "top-20 md:top-24 opacity-1"
+              : "-top-24 opacity-0"
+          }`}
+        >
+          <button
+            onClick={() => handleThemeSwitch()}
+            className="text-lg sm:text-xl outline-none rounded-md inline-flex appearance-none items-center justify-center p-3 sm:p-4 bg-purple-500 hover:bg-purple-600 transition-all duration-200 text-white"
+          >
+            <FaMoon />
+          </button>
+        </div>
+        <Header
+          finishedLoading={context.sharedState.finishedLoading}
+          sectionsRef={homeRef}
+        />
+        <MyName finishedLoading={context.sharedState.finishedLoading} />
+        <SocialMediaArround
+          finishedLoading={context.sharedState.finishedLoading}
+        />
+        {context.sharedState.finishedLoading ? (
+          <AboutMe ref={aboutRef} />
+        ) : (
+          <></>
+        )}
+        {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>}
+        {context.sharedState.finishedLoading ? <Education /> : <></>}
+        {context.sharedState.finishedLoading ? <Projects /> : <></>}
+        {context.sharedState.finishedLoading ? <Gallery /> : <></>}
+        {context.sharedState.finishedLoading ? (
+          <Footer githubUrl={""} hideSocialsInDesktop={true} />
+        ) : (
+          <></>
+        )}
+      </div>
     </>
   );
 }

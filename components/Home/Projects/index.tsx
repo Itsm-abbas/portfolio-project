@@ -14,6 +14,7 @@ const Projects = () => {
       field: "CyberSecurity",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci aliquam itaque fuga illo, quibusdam voluptatibus",
       image: "/projects/hulu-clone.png",
+      link: "www.google.com",
     },
     {
       id: 2,
@@ -22,6 +23,7 @@ const Projects = () => {
       field: "Donation",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci aliquam itaque fuga illo, quibusdam voluptatibus",
       image: "/projects/jobs_app.png",
+      link: "www.facebook.com",
     },
     {
       id: 3,
@@ -30,6 +32,7 @@ const Projects = () => {
       field: "Blockchain",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci aliquam itaque fuga illo, quibusdam voluptatibus",
       image: "/projects/dreamStore.png",
+      link: "www.yahoo.com",
     },
     {
       id: 4,
@@ -38,6 +41,7 @@ const Projects = () => {
       field: "Donation",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci aliquam itaque fuga illo, quibusdam voluptatibus",
       image: "/projects/jobs_app.png",
+      link: "www.gmail.com",
     },
     {
       id: 5,
@@ -46,6 +50,7 @@ const Projects = () => {
       field: "CyberSecurity",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci aliquam itaque fuga illo, quibusdam voluptatibus",
       image: "/projects/hulu-clone.png",
+      link: "www.dailymotion.com",
     },
     {
       id: 6,
@@ -54,6 +59,7 @@ const Projects = () => {
       field: "Blockchain",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci aliquam itaque fuga illo, quibusdam voluptatibus",
       image: "/projects/dreamStore.png",
+      link: "www.google.com",
     },
   ];
   let HandleModal = (item: {
@@ -103,25 +109,25 @@ const Projects = () => {
                       <tr>
                         <th
                           scope="col"
-                          className="px-4 font-semibold text-gray-900 dark:text-white py-4 text-left"
+                          className="px-4 text-gray-900 dark:text-white py-4 text-left"
                         >
                           No
                         </th>
                         <th
                           scope="col"
-                          className="px-4 font-semibold text-gray-900 dark:text-white py-4 text-left"
+                          className="px-4 font-Arimo text-gray-900 dark:text-white py-4 text-left"
                         >
                           Title
                         </th>
                         <th
                           scope="col"
-                          className="px-4 font-semibold text-gray-900 dark:text-white py-4 text-left"
+                          className="px-4  text-gray-900 dark:text-white py-4 text-left"
                         >
                           Type
                         </th>
                         <th
                           scope="col"
-                          className="px-4 font-semibold text-gray-900 dark:text-white  py-4 text-left"
+                          className="px-4 font-mono text-gray-900 dark:text-white  py-4 text-left"
                         >
                           Field
                         </th>
@@ -134,16 +140,16 @@ const Projects = () => {
                             onClick={() => HandleModal(item)}
                             className="cursor-pointer rounded-sm border-gray-300 border-b-2 transition duration-300 ease-in-out hover:bg-[#f4ece5] dark:hover:bg-gray-800"
                           >
-                            <td className="px-4 py-4 whitespace-nowrap  font-medium text-gray-900 dark:text-white">
+                            <td className="px-4 py-4 whitespace-nowrap   text-gray-900 dark:text-white">
                               {item.id}
                             </td>
-                            <td className="px-4 py-4 whitespace-nowrap  font-medium text-gray-900 dark:text-white">
+                            <td className="px-4 py-4 whitespace-nowrap font-Arimo  text-gray-900 dark:text-white">
                               {item.title}
                             </td>
-                            <td className="px-4 text-gray-900 dark:text-white font-medium  py-4 whitespace-nowrap">
+                            <td className="px-4 text-gray-900 dark:text-white   py-4 whitespace-nowrap">
                               {item.type}
                             </td>
-                            <td className="px-4 font-Text2 text-gray-900 dark:text-white font-medium  py-4 whitespace-nowrap">
+                            <td className="px-4 font-mono text-gray-900 dark:text-white  py-4 whitespace-nowrap">
                               {item.field}
                             </td>
                           </tr>

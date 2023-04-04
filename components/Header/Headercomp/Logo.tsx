@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import Img from "../../../components/smallComp/image/Img";
 
 export default function Logo(props: { finishedLoading: boolean }) {
+  let theme;
+  if (typeof window !== "undefined") {
+    theme = localStorage.getItem("theme");
+  }
+  useEffect(() => {}, []);
+
   return (
     <>
       <motion.div
@@ -15,7 +21,11 @@ export default function Logo(props: { finishedLoading: boolean }) {
         }}
         className=" relative h-12 w-10 "
       >
-        <Img src={"/img/dt-logo-grey.png"} className={"object-contain rounded-lg"} alt="My Image Not Found" />
+        <Img
+          src={theme == "light" ? "/img/dt-logo-grey.png" : "/img/dt-logo.png"}
+          className={"object-contain rounded-lg"}
+          alt="My Image Not Found"
+        />
       </motion.div>
     </>
   );
