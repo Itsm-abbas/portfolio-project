@@ -1,6 +1,6 @@
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import { Link } from "react-scroll";
-const MobileMenu = props => {
+const MobileMenu = (props) => {
   const closeMenu = () => {
     props.setRotate(!props.rotate);
     props.setShowElement(!props.ShowElement);
@@ -15,10 +15,10 @@ const MobileMenu = props => {
       >
         <div
           onClick={() => closeMenu()}
-          className="w-1/4 h-full backdrop-blur-sm bg-MobileNavColor/30 hover:cursor-pointer"
+          className="w-1/4 h-full backdrop-blur-sm bg-MobileNavColor/50 hover:cursor-pointer"
         ></div>
         <div
-          className="w-3/4 h-full bg-MobileNavBarColor flex flex-col 
+          className="w-3/4 h-full bg-MobileNavBarColor dark:bg-DarkbgColor flex flex-col 
         justify-center items-center space-y-8 font-sans"
         >
           <Link
@@ -47,7 +47,9 @@ const MobileMenu = props => {
             onClick={() => closeMenu()}
             className="flex flex-col text-center space-y-2"
           >
-            <span className="text-AAsecondary text-xs font-mono hover:cursor-pointer">02.</span>
+            <span className="text-AAsecondary text-xs font-mono hover:cursor-pointer">
+              02.
+            </span>
             <span
               className="text-white font-Text2 text-sm sm:text-base
              hover:text-AAsecondary hover:cursor-pointer duration-300"
@@ -56,7 +58,7 @@ const MobileMenu = props => {
             </span>
           </Link>
           <Link
-            to="SomethingIveBuiltSection"
+            to="ProjectSection"
             spy={true}
             smooth={true}
             offset={100}
@@ -73,7 +75,7 @@ const MobileMenu = props => {
             </span>
           </Link>
           <Link
-            to="GetInTouchSection"
+            to="GallerySection"
             spy={true}
             smooth={true}
             offset={100}

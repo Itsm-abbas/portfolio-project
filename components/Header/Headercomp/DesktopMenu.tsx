@@ -29,7 +29,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           duration={200}
         >
           &gt; 01.{" "}
-          <span className="text-gray-500 hover:cursor-pointer hover:text-AAsecondary duration-300">
+          <span className="text-gray-500 dark:text-gray-100 hover:cursor-pointer hover:text-AAsecondary dark:hover:text-AAsecondary duration-300">
             About
           </span>
         </ReactScrollLink>
@@ -58,7 +58,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           duration={200}
         >
           &gt; 02.{" "}
-          <span className="text-gray-500  hover:cursor-pointer hover:text-AAsecondary duration-300">
+          <span className="text-gray-500 dark:text-gray-100  hover:cursor-pointer dark:hover:text-AAsecondary hover:text-AAsecondary duration-300">
             Work Experience
           </span>
         </ReactScrollLink>
@@ -87,7 +87,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           duration={200}
         >
           &gt; 03.{" "}
-          <span className="text-gray-500  hover:cursor-pointer hover:text-AAsecondary duration-300">
+          <span className="text-gray-500 dark:text-gray-100  hover:cursor-pointer hover:text-AAsecondary  dark:hover:text-AAsecondary duration-300">
             Projects
           </span>
         </ReactScrollLink>
@@ -109,14 +109,14 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         className="text-AAsecondary"
       >
         <ReactScrollLink
-          to="GetInTouchSection"
+          to="GallerySection"
           spy={true}
           smooth={true}
           offset={-100}
           duration={200}
         >
           &gt; 04.{" "}
-          <span className="text-gray-500  hover:cursor-pointer hover:text-AAsecondary duration-300">
+          <span className="text-gray-500 dark:text-gray-100  hover:cursor-pointer hover:text-AAsecondary dark:hover:text-AAsecondary duration-300">
             Gallery
           </span>
         </ReactScrollLink>

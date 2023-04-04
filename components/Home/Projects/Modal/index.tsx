@@ -13,12 +13,12 @@ const Modal = ({ modal, setModal, modalData }) => {
   //   }, [modal]);
   return (
     <div
-      className={`text-gray-800 fixed backdrop-blur-sm transition-all duration-200 top-0 h-screen w-screen left-0 bottom-0 right-0 z-20  ${
+      className={`text-gray-800 dark:text-white fixed backdrop-blur-sm transition-all duration-200 top-0 h-screen w-screen left-0 bottom-0 right-0 z-20  ${
         modal ? "scale-1 " : "scale-0"
       }`}
     >
       <div
-        className={`fixed transition-all duration-400 delay-300 px-2 pb-4 pt-4 shadow-lg border-2 border-gray w-72 xs:w-96  sm:w-[480px]  left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 z-30 bg-white rounded-xl ${
+        className={`fixed transition-all duration-400 delay-300 px-2 pb-4 pt-4 shadow-2xl border-2 border-gray-500 w-72 xs:w-96  sm:w-[480px]  left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 z-30 bg-AAprimary dark:bg-DarkbgColor rounded-xl ${
           modal ? "scale-1 " : "scale-0"
         }  `}
       >

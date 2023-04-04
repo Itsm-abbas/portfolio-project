@@ -6,7 +6,7 @@ const Education = () => {
   return (
     <div
       data-aos="fade-up"
-      className="flex flex-col items-center justify-center py-20 space-y-8 bg-AAprimary"
+      className="flex flex-col items-center justify-center py-20 space-y-8 bg-AAprimary dark:bg-DarkbgColor"
     >
       <div
         className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] 
@@ -22,7 +22,7 @@ const Education = () => {
               03.
             </span>
           </div>
-          <span className="text-gray-800 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
+          <span className="text-gray-800 dark:text-white opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
             Education
           </span>
           <div className="bg-gray-400 h-[0.2px] w-16 sm:w-44 md:w-80"></div>

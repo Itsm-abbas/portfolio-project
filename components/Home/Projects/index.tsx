@@ -72,7 +72,7 @@ const Projects = () => {
       <div
         data-aos="fade-up"
         id="ProjectSection"
-        className="flex flex-col items-center justify-center py-20 space-y-8 bg-AAprimary"
+        className="flex flex-col items-center justify-center py-20 space-y-8 bg-AAprimary dark:bg-DarkbgColor"
       >
         <div
           className="flex flex-col space-y-8 px-4 md:px-0 w-full 
@@ -88,7 +88,7 @@ const Projects = () => {
                 04.
               </span>
             </div>
-            <span className="text-gray-800 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
+            <span className="text-gray-800 dark:text-white opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
               Projects
             </span>
             <div className="bg-gray-400 h-[0.2px] w-16 sm:w-44 md:w-80"></div>
@@ -103,25 +103,25 @@ const Projects = () => {
                       <tr>
                         <th
                           scope="col"
-                          className="px-4 font-semibold text-gray-900  py-4 text-left"
+                          className="px-4 font-semibold text-gray-900 dark:text-white py-4 text-left"
                         >
                           No
                         </th>
                         <th
                           scope="col"
-                          className="px-4 font-semibold text-gray-900  py-4 text-left"
+                          className="px-4 font-semibold text-gray-900 dark:text-white py-4 text-left"
                         >
                           Title
                         </th>
                         <th
                           scope="col"
-                          className="px-4 font-semibold text-gray-900  py-4 text-left"
+                          className="px-4 font-semibold text-gray-900 dark:text-white py-4 text-left"
                         >
                           Type
                         </th>
                         <th
                           scope="col"
-                          className="px-4 font-semibold text-gray-900  py-4 text-left"
+                          className="px-4 font-semibold text-gray-900 dark:text-white dark:text-white  py-4 text-left"
                         >
                           Field
                         </th>
@@ -132,18 +132,18 @@ const Projects = () => {
                         return (
                           <tr
                             onClick={() => HandleModal(item)}
-                            className="cursor-pointer rounded-sm border-gray-300 border-b-2 transition duration-300 ease-in-out hover:bg-[#f4ece5]"
+                            className="cursor-pointer rounded-sm border-gray-300 border-b-2 transition duration-300 ease-in-out hover:bg-[#f4ece5] dark:hover:bg-gray-800"
                           >
-                            <td className="px-4 py-4 whitespace-nowrap  font-medium text-gray-900">
+                            <td className="px-4 py-4 whitespace-nowrap  font-medium text-gray-900 dark:text-white">
                               {item.id}
                             </td>
-                            <td className="px-4 py-4 whitespace-nowrap  font-medium text-gray-900">
+                            <td className="px-4 py-4 whitespace-nowrap  font-medium text-gray-900 dark:text-white">
                               {item.title}
                             </td>
-                            <td className="px-4 text-gray-900 font-medium  py-4 whitespace-nowrap">
+                            <td className="px-4 text-gray-900 dark:text-white font-medium  py-4 whitespace-nowrap">
                               {item.type}
                             </td>
-                            <td className="px-4 text-gray-900 font-medium  py-4 whitespace-nowrap">
+                            <td className="px-4 text-gray-900 dark:text-white font-medium  py-4 whitespace-nowrap">
                               {item.field}
                             </td>
                           </tr>

@@ -42,7 +42,7 @@ export default function WhereIHaveWorked() {
   return (
     <div
       data-aos="fade-up"
-      className="flex flex-col items-center justify-center py-24 space-y-12 bg-AAprimary"
+      className="flex flex-col items-center justify-center py-24 space-y-12 bg-AAprimary dark:bg-DarkbgColor"
     >
       {/* // ? Title "Work Experience" */}
       <section className="flex flex-row items-center">
@@ -56,7 +56,7 @@ export default function WhereIHaveWorked() {
           </span>
         </div>
 
-        <span className="text-gray-800 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
+        <span className="text-gray-800 dark:text-white opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
           Work Experience
         </span>
         <div className="bg-gray-400 h-[0.2px] w-16 sm:w-44 md:w-80"></div>
@@ -75,7 +75,7 @@ export default function WhereIHaveWorked() {
       {/* // Internships Section */}
       <section className="flex flex-row items-center">
         <div className="flex flex-row items-center"></div>
-        <span className="text-gray-800 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
+        <span className="text-gray-800 dark:text-white opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
           Internships
         </span>
         <div className="bg-gray-400 h-[0.2px] w-16 sm:w-44 md:w-80"></div>
@@ -118,8 +118,8 @@ const CompaniesBar = (props) => {
                companyNameBackgroundColorGreen[
                  props.ButtonOrderOfcompanyNameBackgroundColorGreen
                ]
-                 ? "bg-ResumeButtonHover text-AAsecondary"
-                 : "text-gray-500"
+                 ? "bg-ResumeButtonHover text-AAsecondary "
+                 : "text-gray-500 dark:text-gray-200"
              }`}
       >
         {props.CompanyName}
@@ -205,14 +205,14 @@ const CompaniesBarInternship = (props) => {
           );
         }}
         className={`flex-none sm:text-sm text-xs text-center md:text-left  hover:text-AAsecondary
-             hover:bg-ResumeButtonHover rounded  font-mono  
+             hover:bg-ResumeButtonHover dark:hover:text-AAsecondary rounded  font-mono  
              py-3 md:pl-6 md:px-4 md:w-44 w-32 duration-500
              ${
                companyNameBackgroundColorGreen[
                  props.ButtonOrderOfcompanyNameBackgroundColorGreen
                ]
                  ? "bg-ResumeButtonHover text-AAsecondary"
-                 : "text-gray-500"
+                 : "text-gray-500 dark:text-gray-200"
              }`}
       >
         {props.CompanyName}

@@ -113,3 +113,9 @@
         font-size: 10rem;
     }
 }
+
+@media screen and (max-width:500px) {
+    .body {
+        display: none;
+    }
+}

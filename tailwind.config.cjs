@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -32,6 +33,7 @@ module.exports = {
         Arimo: ["Arimo", "sans-serif"],
       },
       colors: {
+        DarkbgColor: "#202023",
         AAprimary: "#efe7dd",
         AAsecondary: "#4c79e5",
         AAError: "#ff6489",

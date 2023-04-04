@@ -8,7 +8,7 @@ export default function AboutMe(props) {
     <div
       id="aboutSection"
       data-aos="fade-up"
-      className="snap-start flex flex-col  items-center py-20 bg-AAprimary"
+      className="dark:bg-DarkbgColor snap-start flex flex-col  items-center py-20 bg-AAprimary"
     >
       {/* // ? 0.1 About Me */}
       <div
@@ -26,18 +26,18 @@ export default function AboutMe(props) {
               {" "}
               01.
             </span>
-            <span className="flex-none text-gray-800 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
+            <span className="flex-none text-gray-800 dark:text-white opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
               About Me
             </span>
           </div>
-          <div className="bg-gray-400 h-[0.2px] w-full sm:w-72 ml-4"></div>
+          <div className="bg-gray-400  h-[0.2px] w-full sm:w-72 ml-4"></div>
         </div>
         {/* // ? Paragraphs */}
 
         <div className="w-full flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 sm:space-x-2 ">
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
-              <span className="text-gray-600  tracking-wide">
+              <span className="text-gray-600 dark:text-white  tracking-wide">
                 I am a business professional by day, and a developer by night. I
                 am absolutely hooked on anything tech and I'm always on the hunt
                 to explore emerging technologies such as blockchain, AI,
@@ -45,7 +45,7 @@ export default function AboutMe(props) {
               </span>
             </div>
             <div className="font-Header ">
-              <span className="text-gray-600  tracking-wide">
+              <span className="text-gray-600 dark:text-white  tracking-wide">
                 My interest started back in middle school when I made several
                 mini flash games after school. Turns out making flash game
                 replicas of Cooking Mama and Amateur Surgeon taught me a great
@@ -53,7 +53,7 @@ export default function AboutMe(props) {
               </span>
             </div>
             <div className="font-Header ">
-              <span className="text-gray-600  tracking-wide">
+              <span className="text-gray-600 dark:text-white  tracking-wide">
                 Today, I primarily work on consulting in supply chain and
                 maritime areas, with a focus on digitalization and optimization.
                 I have published Indonesia's first official book on blockchain,
@@ -65,7 +65,7 @@ export default function AboutMe(props) {
               </span>
             </div>
             <div className="font-Header ">
-              <span className="text-gray-600  tracking-wide">
+              <span className="text-gray-600 dark:text-white  tracking-wide">
                 Most would refer to me as a music aficionado, as I love to
                 listen, play, and create music in my spare time. I enjoy
                 cooking, basketball, and contemporary art. I am also a longtime
