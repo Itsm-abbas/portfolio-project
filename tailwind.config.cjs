@@ -34,6 +34,7 @@ module.exports = {
       },
       colors: {
         DarkbgColor: "#202023",
+        DarkPalette: "#3E3C44",
         AAprimary: "#efe7dd",
         AAsecondary: "#4c79e5",
         AAError: "#ff6489",

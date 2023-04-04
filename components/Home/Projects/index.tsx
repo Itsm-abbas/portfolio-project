@@ -95,10 +95,10 @@ const Projects = () => {
           </section>
           {/* Table */}
           <div className="flex flex-col">
-            <div className="overflow-x-auto sm:mx-0.5 lg:mx-0.5">
+            <div className="overflow-x-auto scrollbar-hide sm:mx-0.5 lg:mx-0.5">
               <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-                <div className="overflow-hidden">
-                  <table className="min-w-full text-lg">
+                <div className="overflow-hidden ">
+                  <table className="min-w-full text-lg ">
                     <thead className=" border-gray-300 border-b-2 ">
                       <tr>
                         <th
