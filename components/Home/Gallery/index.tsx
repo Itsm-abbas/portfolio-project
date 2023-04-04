@@ -27,6 +27,7 @@ const Gallery = () => {
   ];
   return (
     <div
+      data-aos="fade-up"
       id="GallerySection"
       className="flex flex-col  py-20 justify-center items-center space-y-8 bg-AAprimary dark:bg-DarkbgColor"
     >

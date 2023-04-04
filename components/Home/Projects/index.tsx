@@ -121,7 +121,7 @@ const Projects = () => {
                         </th>
                         <th
                           scope="col"
-                          className="px-4 font-semibold text-gray-900 dark:text-white dark:text-white  py-4 text-left"
+                          className="px-4 font-semibold text-gray-900 dark:text-white  py-4 text-left"
                         >
                           Field
                         </th>
