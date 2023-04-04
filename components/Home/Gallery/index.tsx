@@ -6,23 +6,23 @@ const Gallery = () => {
   const Gallery = [
     {
       title: "Title Here",
-      image: "/img/douglastjokro.JPG",
+      image: "/Gallery/Gallery01-min.jpg",
     },
     {
       title: "Title Here",
-      image: "/img/douglastjokro.JPG",
+      image: "/Gallery/Gallery02-min.jpg",
     },
     {
       title: "Title Here",
-      image: "/img/douglastjokro.JPG",
+      image: "/Gallery/Gallery03-min.jpg",
     },
     {
       title: "Title Here",
-      image: "/img/douglastjokro.JPG",
+      image: "/Gallery/Gallery04-min.jpg",
     },
     {
       title: "Title Here",
-      image: "/img/douglastjokro.JPG",
+      image: "/Gallery/Gallery01-min.jpg",
     },
   ];
   return (
@@ -31,7 +31,7 @@ const Gallery = () => {
       id="GallerySection"
       className="flex flex-col   py-10 mb-24 sm:py-10 justify-center items-center space-y-8 bg-AAprimary dark:bg-DarkbgColor"
     >
-      <section className="flex items-center md:mb-10 w-full sm:justify-center   md:w-[800px] lg:w-[1000px]">
+      <section className="flex items-center mb-4 md:mb-10 w-full sm:justify-center   md:w-[800px] lg:w-[1000px]">
         <div className="flex flex-row items-center">
           <ArrowIcon
             className={"flex-none h-4 md:h-6 w-4 md:w-5 text-AAsecondary"}
@@ -50,13 +50,15 @@ const Gallery = () => {
         className="flex flex-col space-y-8  w-[350px] xs:w-[420px] sm:w-[640px]
         md:w-[750px] lg:w-[1020px] scrollbar-hide overflow-x-scroll"
       >
-        <div className=" w-[1000px] md:w-[1500px] h-[400px] box-border  relative flex items-center gap-6">
+        <div
+          className={`w-[1000px] sm:w-[1400px] md:w-[1600px] lg:w-[2600px]  box-border  relative flex items-center gap-6`}
+        >
           {/* Mapping on gallery */}
           {Gallery.map((item) => {
             return (
-              <div className="w-80 h-auto flex flex-col gap-5 ">
+              <div className="relative w-[500px] flex flex-col gap-5 ">
                 <img
-                  className="rounded-md h-[260px] md:h-[350px] w-60 md:w-80"
+                  className=" h-full w-full object-cover rounded-md "
                   src={item.image}
                   alt=""
                 />
