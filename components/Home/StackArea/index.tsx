@@ -46,6 +46,19 @@ const StackArea = () => {
       title: "Vscode",
       image: "/Stack Icons/visual-studio-code.png",
     },
+    {
+      title: "Tensorflow",
+      image: "/Stack Icons/tensorflow.png",
+    },
+
+    {
+      title: "opencv",
+      image: "/Stack Icons/opencv.png",
+    },
+    {
+      title: "Keras",
+      image: "/Stack Icons/keras.png",
+    },
   ];
   return (
     <div className="px-6">

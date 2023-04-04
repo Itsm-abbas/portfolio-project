@@ -29,7 +29,7 @@ const Gallery = () => {
     <div
       data-aos="fade-up"
       id="GallerySection"
-      className="flex flex-col   py-10 sm:py10 justify-center items-center space-y-8 bg-AAprimary dark:bg-DarkbgColor"
+      className="flex flex-col   py-10 mb-24 sm:py-10 justify-center items-center space-y-8 bg-AAprimary dark:bg-DarkbgColor"
     >
       <section className="flex items-center md:mb-10 w-full sm:justify-center   md:w-[800px] lg:w-[1000px]">
         <div className="flex flex-row items-center">

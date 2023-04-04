@@ -143,7 +143,7 @@ const Projects = () => {
                             <td className="px-4 text-gray-900 dark:text-white font-medium  py-4 whitespace-nowrap">
                               {item.type}
                             </td>
-                            <td className="px-4 text-gray-900 dark:text-white font-medium  py-4 whitespace-nowrap">
+                            <td className="px-4 font-Text2 text-gray-900 dark:text-white font-medium  py-4 whitespace-nowrap">
                               {item.field}
                             </td>
                           </tr>
