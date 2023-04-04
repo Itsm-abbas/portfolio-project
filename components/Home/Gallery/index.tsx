@@ -47,11 +47,11 @@ const Gallery = () => {
         <div className="bg-gray-400 h-[0.2px] w-16 sm:w-44 md:w-80"></div>
       </section>
       <div
-        className="flex flex-col space-y-8  w-[350px] xs:w-[420px] sm:w-[640px]
+        className="flex flex-col space-y-8 w-[340px]  xs:w-[400px]  sm:w-[640px]
         md:w-[750px] lg:w-[1020px] scrollbar-hide overflow-x-scroll"
       >
         <div
-          className={`w-[1000px] sm:w-[1400px] md:w-[1600px] lg:w-[2600px]  box-border  relative flex items-center gap-6`}
+          className={`w-[1000px] sm:w-[1400px] md:w-[1600px] lg:w-[2600px]  box-border  relative flex items-center gap-2 sm:gap-4 md:gap-6`}
         >
           {/* Mapping on gallery */}
           {Gallery.map((item) => {

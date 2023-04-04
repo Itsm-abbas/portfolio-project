@@ -61,7 +61,7 @@ const StackArea = () => {
     },
   ];
   return (
-    <div className="px-6">
+    <div className="px-6" data-aos="fade-up">
       <p className="text-lg sm:text-xl font-Arimo  text-gray-800 dark:text-white">
         Languages, libraries, frameworks, and tools I’ve been working with
         recently
