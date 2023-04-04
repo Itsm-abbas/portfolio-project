@@ -140,6 +140,7 @@ export default function Home() {
                 size={"lg"}
                 bordered
                 color="primary"
+                checked={theme === "dark"}
                 icon={theme == "light" ? <FaRegMoon /> : <FaSun />}
                 onChange={handleThemeSwitch}
               />
@@ -149,6 +150,7 @@ export default function Home() {
                 size={"xl"}
                 bordered
                 color="primary"
+                checked={theme === "dark"}
                 icon={theme == "light" ? <FaRegMoon /> : <FaSun />}
                 onChange={handleThemeSwitch}
               />

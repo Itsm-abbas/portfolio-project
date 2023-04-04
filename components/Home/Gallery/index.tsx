@@ -29,9 +29,9 @@ const Gallery = () => {
     <div
       data-aos="fade-up"
       id="GallerySection"
-      className="flex flex-col overflow-scroll  py-20 justify-center items-center space-y-8 bg-AAprimary dark:bg-DarkbgColor"
+      className="flex flex-col   py-10 sm:py10 justify-center items-center space-y-8 bg-AAprimary dark:bg-DarkbgColor"
     >
-      <section className="flex items-center md:mb-10   md:w-[800px] lg:w-[1000px]">
+      <section className="flex items-center md:mb-10 w-full sm:justify-center   md:w-[800px] lg:w-[1000px]">
         <div className="flex flex-row items-center">
           <ArrowIcon
             className={"flex-none h-4 md:h-6 w-4 md:w-5 text-AAsecondary"}
@@ -47,7 +47,7 @@ const Gallery = () => {
         <div className="bg-gray-400 h-[0.2px] w-16 sm:w-44 md:w-80"></div>
       </section>
       <div
-        className="flex flex-col space-y-8  w-[350px] xs:w-[430px] sm:w-[640px]
+        className="flex flex-col space-y-8  w-[350px] xs:w-[420px] sm:w-[640px]
         md:w-[750px] lg:w-[1020px] scrollbar-hide overflow-x-scroll"
       >
         <div className=" w-[1000px] md:w-[1500px] h-[400px] box-border  relative flex items-center gap-6">
