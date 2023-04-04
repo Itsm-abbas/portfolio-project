@@ -12,6 +12,7 @@ import Head from "next/head";
 import Education from "../components/Home/Education";
 import Loading from "../components/Loading/Loading";
 import Projects from "../components/Home/Projects";
+import Gallery from "../components/Home/Gallery";
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const [ShowElement, setShowElement] = useState(false);
@@ -109,6 +110,7 @@ export default function Home() {
             {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>}
             {context.sharedState.finishedLoading ? <Education /> : <></>}
             {context.sharedState.finishedLoading ? <Projects /> : <></>}
+            {context.sharedState.finishedLoading ? <Gallery /> : <></>}
             {context.sharedState.finishedLoading ? (
               <Footer githubUrl={""} hideSocialsInDesktop={true} />
             ) : (
