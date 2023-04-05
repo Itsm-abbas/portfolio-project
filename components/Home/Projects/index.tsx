@@ -6,6 +6,7 @@ import StackArea from "../StackArea";
 const Projects = () => {
   const [modalData, setmodalData] = useState({});
   const [ismodalopen, setIsModalOpen] = useState<boolean>(false);
+  // Projects data here
   let ProjectsData = [
     {
       id: 1,

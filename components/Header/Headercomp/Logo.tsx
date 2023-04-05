@@ -3,7 +3,7 @@ import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import Img from "../../../components/smallComp/image/Img";
 
 export default function Logo(props: { finishedLoading: boolean }) {
-  let theme = "light";
+  let theme = "";
   if (typeof window !== "undefined") {
     if (localStorage.getItem("theme") === "light") {
       theme = "light";
@@ -11,11 +11,12 @@ export default function Logo(props: { finishedLoading: boolean }) {
       theme = "dark";
     }
   }
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       theme = localStorage.getItem("theme");
     }
-  }, [theme]);
+  }, []);
 
   return (
     <>
@@ -29,11 +30,20 @@ export default function Logo(props: { finishedLoading: boolean }) {
         }}
         className=" relative h-12 w-10 "
       >
-        <Img
-          src={theme == "light" ? "/img/dt-logo-grey.png" : "/img/dt-logo.png"}
-          className={"object-contain rounded-lg"}
-          alt="My Image Not Found"
-        />
+        {theme === "light" && (
+          <Img
+            src={"/img/dt-logo-grey.png"}
+            className={"object-contain rounded-lg"}
+            alt="My Image Not Found"
+          />
+        )}
+        {theme === "dark" && (
+          <Img
+            src={"/img/dt-logo.png"}
+            className={"object-contain rounded-lg"}
+            alt="My Image Not Found"
+          />
+        )}
       </motion.div>
     </>
   );

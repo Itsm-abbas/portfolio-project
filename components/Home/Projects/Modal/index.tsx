@@ -1,6 +1,5 @@
 import React, { Dispatch, SetStateAction, useEffect, useRef } from "react";
 import { ImCross } from "react-icons/im";
-import { motion } from "framer-motion";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 const Modal = (props: {
   modal: boolean;
@@ -9,13 +8,6 @@ const Modal = (props: {
 }) => {
   const { modal, setModal, modalData } = props;
   const modalRef = useRef(null);
-  //   useEffect(() => {
-  //     if (modal) {
-  //       document.body.style.overflow = "hidden";
-  //     } else {
-  //       document.body.style.overflow = "auto";
-  //     }
-  //   }, [modal]);
   function handleClickOutside(event: { target: any }) {
     if (modalRef.current && !modalRef.current.contains(event.target)) {
       setModal(false);

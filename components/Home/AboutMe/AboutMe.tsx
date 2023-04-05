@@ -2,7 +2,7 @@ import React from "react";
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
 import Link from "next/link";
 
-export default function AboutMe({ ref }) {
+export default function AboutMe() {
   return (
     <div
       id="aboutSection"

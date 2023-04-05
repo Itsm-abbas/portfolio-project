@@ -74,6 +74,19 @@ export default function Home() {
       localStorage.setItem("theme", "light");
     }
   }, []);
+  // Default system theme
+  useEffect(() => {
+    const prefersDarkMode =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (prefersDarkMode) {
+      setTheme("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      setTheme("light");
+      localStorage.setItem("theme", "light");
+    }
+  }, []);
 
   useEffect(() => {
     // select html elem
@@ -184,11 +197,7 @@ export default function Home() {
         <SocialMediaArround
           finishedLoading={context.sharedState.finishedLoading}
         />
-        {context.sharedState.finishedLoading ? (
-          <AboutMe ref={aboutRef} />
-        ) : (
-          <></>
-        )}
+        {context.sharedState.finishedLoading ? <AboutMe /> : <></>}
         {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>}
         {context.sharedState.finishedLoading ? <Education /> : <></>}
         {context.sharedState.finishedLoading ? <Projects /> : <></>}

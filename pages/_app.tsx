@@ -1,7 +1,8 @@
 import "../styles/globals.css";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import AppContext from "../components/AppContextFolder/AppContext";
 import { useRef, useState } from "react";
+import dynamic from "next/dynamic";
 
 function MyApp({ Component, pageProps }) {
   const timerCookie = useRef(null);
@@ -14,9 +15,9 @@ function MyApp({ Component, pageProps }) {
         scrolling: null,
         scrollSizeY: null,
       },
-      Scrolling:{
-        IntervalEvent:null
-      }
+      Scrolling: {
+        IntervalEvent: null,
+      },
     },
     userdata: {
       timerCookieRef: timerCookie,
@@ -37,4 +38,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default dynamic(() => Promise.resolve(MyApp), { ssr: false });

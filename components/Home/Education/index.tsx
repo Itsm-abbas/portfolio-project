@@ -33,6 +33,7 @@ const Education = () => {
             data-aos="fade-up"
             className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 "
           >
+            {/* 1 */}
             <div className="bg-white dark:bg-DarkPalette dark:text-white flex flex-col px-8 py-5 rounded-md">
               <div className="flex gap-6  items-center ">
                 <Image width={50} height={45} src="/uni_1.png" alt="uni" />
@@ -49,6 +50,7 @@ const Education = () => {
                 2021 - 2025
               </p>
             </div>
+            {/* 2 */}
             <div className="bg-white dark:bg-DarkPalette dark:text-white flex flex-col px-8 py-5 rounded-md">
               <div className="flex gap-6  items-center ">
                 <Image width={50} height={45} src="/uni_2.png" alt="uni" />
@@ -71,6 +73,7 @@ const Education = () => {
             data-aos="fade-up"
             className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12"
           >
+            {/* 3 */}
             <div className="bg-white shadow-sm dark:bg-DarkPalette dark:text-white  flex flex-col px-8 py-5 rounded-md">
               <div className="flex gap-6  items-center ">
                 <Image width={50} height={45} src="/uni_3.png" alt="uni" />
@@ -88,6 +91,7 @@ const Education = () => {
                 2018 - 2021
               </p>
             </div>
+            {/* 4 */}
             <div className="bg-white dark:bg-DarkPalette dark:text-white flex flex-col px-8 py-5 rounded-md">
               <div className="flex gap-6  items-center ">
                 <Image width={50} height={45} src="/uni-4.png" alt="uni" />

@@ -4,6 +4,7 @@
 *.so
 
 # Folders
+typing/
 /bin/
 /build/
 /node_modules/
