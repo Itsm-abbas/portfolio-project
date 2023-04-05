@@ -1,11 +1,13 @@
 import React, { Dispatch, SetStateAction, useEffect, useRef } from "react";
 import { ImCross } from "react-icons/im";
+import { motion } from "framer-motion";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
-interface PropType {
+const Modal = (props: {
   modal: boolean;
   setModal: Dispatch<SetStateAction<boolean>>;
-}
-const Modal = ({ modal, setModal, modalData }) => {
+  modalData;
+}) => {
+  const { modal, setModal, modalData } = props;
   const modalRef = useRef(null);
   //   useEffect(() => {
   //     if (modal) {

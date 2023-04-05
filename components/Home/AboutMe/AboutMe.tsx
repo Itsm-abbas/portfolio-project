@@ -1,9 +1,8 @@
 import React from "react";
-import Img from "../../../components/smallComp/image/Img";
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
 import Link from "next/link";
 
-export default function AboutMe(props) {
+export default function AboutMe({ ref }) {
   return (
     <div
       id="aboutSection"

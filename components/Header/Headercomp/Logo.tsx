@@ -3,11 +3,19 @@ import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import Img from "../../../components/smallComp/image/Img";
 
 export default function Logo(props: { finishedLoading: boolean }) {
-  let theme;
+  let theme = "light";
   if (typeof window !== "undefined") {
-    theme = localStorage.getItem("theme");
+    if (localStorage.getItem("theme") === "light") {
+      theme = "light";
+    } else {
+      theme = "dark";
+    }
   }
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      theme = localStorage.getItem("theme");
+    }
+  }, [theme]);
 
   return (
     <>

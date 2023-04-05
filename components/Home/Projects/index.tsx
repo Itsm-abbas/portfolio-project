@@ -5,7 +5,7 @@ import StackArea from "../StackArea";
 
 const Projects = () => {
   const [modalData, setmodalData] = useState({});
-  const [ismodalopen, setIsModalOpen] = useState(false);
+  const [ismodalopen, setIsModalOpen] = useState<boolean>(false);
   let ProjectsData = [
     {
       id: 1,
@@ -137,6 +137,7 @@ const Projects = () => {
                       {ProjectsData.map((item) => {
                         return (
                           <tr
+                            key={item.id}
                             onClick={() => HandleModal(item)}
                             className="cursor-pointer rounded-sm border-gray-300 border-b-2 transition duration-300 ease-in-out hover:bg-[#f4ece5] dark:hover:bg-gray-800"
                           >
@@ -149,7 +150,7 @@ const Projects = () => {
                             <td className="px-4 text-gray-900 dark:text-white   py-4 whitespace-nowrap">
                               {item.type}
                             </td>
-                            <td className="px-4 font-mono text-gray-900 dark:text-white  py-4 whitespace-nowrap">
+                            <td className="px-4 font-mono text-base text-gray-900 dark:text-white  py-4 whitespace-nowrap">
                               {item.field}
                             </td>
                           </tr>

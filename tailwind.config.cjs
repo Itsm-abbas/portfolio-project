@@ -34,6 +34,8 @@ module.exports = {
       },
       colors: {
         DarkbgColor: "#202023",
+        DarkBtnColor: "#7a5cce",
+        LightBtnColor: "#f5d496",
         DarkPalette: "#3E3C44",
         AAprimary: "#efe7dd",
         AAsecondary: "#4c79e5",

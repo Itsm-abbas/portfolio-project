@@ -2,7 +2,7 @@ import React from "react";
 import ArrowIcon from "../../Icons/ArrowIcon";
 
 const Gallery = () => {
-  // Slider is here
+  // Slider data is here
   const Gallery = [
     {
       title: "Title Here",
@@ -54,9 +54,12 @@ const Gallery = () => {
           className={`w-[1000px] sm:w-[1400px] md:w-[1600px] lg:w-[2600px]  box-border  relative flex items-center gap-2 sm:gap-4 md:gap-6`}
         >
           {/* Mapping on gallery */}
-          {Gallery.map((item) => {
+          {Gallery.map((item, index) => {
             return (
-              <div className="relative w-[500px] flex flex-col gap-5 ">
+              <div
+                key={index}
+                className="relative w-[500px] flex flex-col gap-5 "
+              >
                 <img
                   className=" h-full w-full object-cover rounded-md "
                   src={item.image}

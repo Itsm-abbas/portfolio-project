@@ -1,7 +1,7 @@
 import Header from "../components/Header/Header";
 import MyName from "../components/Home/MyName/MyName";
 import { useContext, useEffect, useState, useRef } from "react";
-import { isMobile } from "react-device-detect";
+import { motion } from "framer-motion";
 import SocialMediaArround from "../components/Home/SocialMediaArround/SocialMediaArround";
 import AboutMe from "../components/Home/AboutMe/AboutMe";
 import WhereIHaveWorked from "../components/Home/WhereIHaveWorked/WhereIHaveWorked";
@@ -121,6 +121,7 @@ export default function Home() {
       <div
         className={`relative snap-mandatory bg-AAprimary dark:bg-DarkbgColor min-h-screen  w-full `}
       >
+        {/* For Dark Theme */}
         <div
           className={`absolute right-6 md:right-12 transition-all duration-500   ${
             theme == "dark"
@@ -128,13 +129,27 @@ export default function Home() {
               : "-top-24 opacity-0"
           }`}
         >
-          <button
+          <motion.button
             onClick={() => handleThemeSwitch()}
-            className="text-lg sm:text-xl outline-none rounded-md inline-flex appearance-none items-center justify-center p-3 sm:p-4 bg-orange-300 hover:bg-orange-400 transition-all duration-200 text-gray-800"
+            initial={{ y: -250, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              opacity: {
+                delay: context.sharedState.finishedLoading ? 0 : 1.8,
+                duration: context.sharedState.finishedLoading ? 0 : 0.6,
+              },
+              y: {
+                delay: context.sharedState.finishedLoading ? 0 : 1.8,
+                duration: context.sharedState.finishedLoading ? 0 : 0.2,
+              },
+            }}
+            className="text-lg sm:text-xl outline-none rounded-md inline-flex appearance-none items-center justify-center p-3 sm:p-4 bg-LightBtnColor hover:bg-LightBtnColor/90 transition-all duration-200 text-gray-800"
           >
             <ImSun />
-          </button>
+          </motion.button>
         </div>
+        {/* For Light Theme */}
+
         <div
           className={`absolute  right-6  md:right-12 transition-all duration-500   ${
             theme == "light"
@@ -142,12 +157,24 @@ export default function Home() {
               : "-top-24 opacity-0"
           }`}
         >
-          <button
+          <motion.button
             onClick={() => handleThemeSwitch()}
-            className="text-lg sm:text-xl outline-none rounded-md inline-flex appearance-none items-center justify-center p-3 sm:p-4 bg-purple-500 hover:bg-purple-600 transition-all duration-200 text-white"
+            initial={{ y: -250, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              opacity: {
+                delay: context.sharedState.finishedLoading ? 0 : 1.8,
+                duration: context.sharedState.finishedLoading ? 0 : 0.6,
+              },
+              y: {
+                delay: context.sharedState.finishedLoading ? 0 : 1.8,
+                duration: context.sharedState.finishedLoading ? 0 : 0.2,
+              },
+            }}
+            className="text-lg sm:text-xl outline-none rounded-md inline-flex appearance-none items-center justify-center p-3 sm:p-4 bg-DarkBtnColor hover:bg-DarkBtnColor/90 transition-all duration-200 text-white"
           >
             <FaMoon />
-          </button>
+          </motion.button>
         </div>
         <Header
           finishedLoading={context.sharedState.finishedLoading}
