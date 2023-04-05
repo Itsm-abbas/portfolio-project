@@ -10,10 +10,6 @@ const Gallery = () => {
     },
     {
       title: "Title Here",
-      image: "/Gallery/Gallery02-min.jpg",
-    },
-    {
-      title: "Title Here",
       image: "/Gallery/Gallery03-min.jpg",
     },
     {
@@ -23,6 +19,10 @@ const Gallery = () => {
     {
       title: "Title Here",
       image: "/Gallery/Gallery01-min.jpg",
+    },
+    {
+      title: "Title Here",
+      image: "/Gallery/Gallery04-min.jpg",
     },
   ];
   return (
