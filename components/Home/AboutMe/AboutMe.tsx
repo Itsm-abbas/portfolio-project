@@ -37,38 +37,35 @@ export default function AboutMe() {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-600 dark:text-white  tracking-wide">
-                I am a business professional by day, and a developer by night. I
-                am absolutely hooked on anything tech and I'm always on the hunt
-                to explore emerging technologies such as blockchain, AI,
-                computational linguistics and computer vision.
+                Hello, my name is Muhammad Abbas and I'm a frontend web
+                developer. I have a passion for creating beautiful and
+                functional websites that provide a seamless user experience.
+                With over 3 years of experience in the industry, I have
+                developed a strong understanding of web development.
               </span>
             </div>
             <div className="font-Header ">
               <span className="text-gray-600 dark:text-white  tracking-wide">
-                My interest started back in middle school when I made several
-                mini flash games after school. Turns out making flash game
-                replicas of Cooking Mama and Amateur Surgeon taught me a great
-                deal on coding and development.
+                I specialize in HTML, CSS, and JavaScript, and have experience
+                working with various frontend frameworks such as React. I'm
+                constantly learning and experimenting with new technologies to
+                improve my skills and stay up-to-date with the latest industry
+                trends.
               </span>
             </div>
             <div className="font-Header ">
               <span className="text-gray-600 dark:text-white  tracking-wide">
-                Today, I primarily work on consulting in supply chain and
-                maritime areas, with a focus on digitalization and optimization.
-                I have published Indonesia's first official book on blockchain,
-                and run{" "}
-                <span className="text-AAsecondary">
-                  <Link href="https://www.techwarung.com">Tech Warung</Link>
-                </span>{" "}
-                on the side.
+                I'm a creative problem solver and enjoy working collaboratively
+                with clients to understand their needs and develop custom
+                solutions that exceed their expectations. My goal is to create
+                visually stunning websites that are easy to use and accessible
+                to everyone.
               </span>
             </div>
             <div className="font-Header ">
               <span className="text-gray-600 dark:text-white  tracking-wide">
-                Most would refer to me as a music aficionado, as I love to
-                listen, play, and create music in my spare time. I enjoy
-                cooking, basketball, and contemporary art. I am also a longtime
-                fan of the New York Knicks.
+                If you're looking for a talented frontend web developer to bring
+                your website to life, I'd love to hear from you!
               </span>
             </div>
           </div>
@@ -83,7 +80,7 @@ export default function AboutMe() {
             <div className="absolute w-5/6 h-5/6  rounded overflow-hidden">
               <div className="absolute w-full h-full group-hover:opacity-0 bg-AAsecondary opacity-0 duration-300 rounded overflow-hidden"></div>
               <img
-                src={"/img/douglastjokro.JPG"}
+                src={"/img/Abbas.png"}
                 className={"object-contain rounded-lg"}
                 alt="My Image Not Found"
               />

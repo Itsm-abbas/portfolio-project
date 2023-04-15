@@ -1,6 +1,7 @@
 import React, { Dispatch, SetStateAction, useEffect, useRef } from "react";
 import { ImCross } from "react-icons/im";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
+import { motion } from "framer-motion";
 const Modal = (props: {
   modal: boolean;
   setModal: Dispatch<SetStateAction<boolean>>;

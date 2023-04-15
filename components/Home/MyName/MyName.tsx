@@ -39,7 +39,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
         className="text-gray-900 dark:text-white
          font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
       >
-        Douglas Tjokrosetio
+        Muhammad Abbas
       </motion.h1>
 
       <motion.h3
@@ -58,8 +58,10 @@ export default function MyName(props: { finishedLoading: boolean }) {
         className="text-gray-600 dark:text-white
         font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
       >
-        A <span className="text-AAsecondary">business professional</span> with
-        expertise in consulting and supply chains.
+        {/*   passionate about creating interactive applications and experiences on the web. */}
+        A <span className="text-AAsecondary">Front-End Web Developer</span>{" "}
+        passionate about creating interactive applications and experiences on
+        the web.
         <br className="md:block hidden" /> I am also a computer science student
         with a deep passion for{" "}
         <span className="text-AAsecondary">emerging technologies</span> and

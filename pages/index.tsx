@@ -20,7 +20,6 @@ export default function Home() {
   const [ShowMe, setShowMe] = useState(false);
   // context Variable to clearInterval
   const context = useContext(AppContext);
-  const aboutRef = useRef<HTMLDivElement>(null);
   const homeRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -110,8 +109,8 @@ export default function Home() {
     }
   };
   const meta = {
-    title: "Douglas Tjokrosetio",
-    description: `I've been working on Software development for 5 years straight. Get in touch with me to know more.`,
+    title: "Muhammad Abbas",
+    description: `I've been working on Web developement for 3 years straight. Get in touch with me to know more.`,
     image: "/site-icon.jpg",
     type: "website",
   };
@@ -122,10 +121,10 @@ export default function Home() {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`https://douglastjokro.com`} />
-        <link rel="canonical" href={`https://douglastjokro.com`} />
+        <meta property="og:url" content={`https://codewithabbas.site`} />
+        <link rel="canonical" href={`https://codewithabbas.site`} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Douglas Tjokrosetio" />
+        <meta property="og:site_name" content="Muhammad Abbas" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <link rel="icon" href={meta.image} />
@@ -198,7 +197,6 @@ export default function Home() {
           finishedLoading={context.sharedState.finishedLoading}
         />
         {context.sharedState.finishedLoading ? <AboutMe /> : <></>}
-        {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>}
         {context.sharedState.finishedLoading ? <Education /> : <></>}
         {context.sharedState.finishedLoading ? <Projects /> : <></>}
         {context.sharedState.finishedLoading ? <Gallery /> : <></>}

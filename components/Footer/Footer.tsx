@@ -14,9 +14,9 @@ const ClickableIcon = (props) => {
   );
 };
 const IconsData = [
-  { href: "https://www.linkedin.com/in/douglastjokro/", Icon: LinkedinIcon },
-  { href: "https://github.com/douglastjokro", Icon: GithubIcon },
-  { href: "https://www.instagram.com/douglastjokro/", Icon: InstagramIcon },
+  { href: "https://www.linkedin.com/in/itsmabbas2004/", Icon: LinkedinIcon },
+  { href: "https://github.com/Itsm-abbas", Icon: GithubIcon },
+  { href: "https://www.instagram.com/itsm.abbas/", Icon: InstagramIcon },
 ];
 
 export default function Fotter(props: {
@@ -47,7 +47,7 @@ export default function Fotter(props: {
     text-sm  space-y-2  "
         >
           <span className="group-hover:text-AAsecondary sm:text-sm text-xs">
-            Douglas Tjokrosetio
+            Muhammad Abbas
           </span>
         </div>
       </a>
